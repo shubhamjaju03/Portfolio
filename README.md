@@ -2,7 +2,7 @@
 
 A modern, responsive, and fully functional **personal portfolio website** built with **Python, Flask, HTML, CSS, and JavaScript**. This project was created as the final capstone for **Angela Yu's 100 Days of Python**.
 
-🔗 **Live Demo**: `https://shubham-python-portfolio.onrender.com` *(Replace with your actual Render deployment link)*
+🔗 **Live Demo**: `https://shubham-python-portfolio.onrender.com`
 
 ---
 ## 🛠️ Technologies Used
