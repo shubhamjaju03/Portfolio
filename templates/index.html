@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block title %}Shubham Jaju | Python Developer{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Shubham Jaju" class="profile-pic">
+        <h2>Hello, I'm <span>Shubham Jaju</span></h2>
+        <p>Python Developer | Web Enthusiast | Lifelong Learner</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View My Work</a>
+            <a href="#contact" class="btn secondary">Get In Touch</a>
+            <!-- ✅ Download Resume Button -->
+            <a href="{{ url_for('static', filename='docs/Shubham_Resume.pdf') }}" class="btn download" download>
+                📄 Download Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>🚀 My Projects</h2>
+    <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="tech-icons">
+                <i class="fab fa-python"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+            <h3>🌤️ Weather App</h3>
+            <p>Built with Python and OpenWeather API. Real-time weather data with clean UI.</p>
+            <div class="badges">
+                <span class="badge">API</span>
+                <span class="badge">Flask</span>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="tech-icons">
+                <i class="fab fa-python"></i>
+                <i class="fas fa-database"></i>
+            </div>
+            <h3>✅ To-Do List Web App</h3>
+            <p>Flask-powered task manager with SQLite. Add, edit, and delete tasks seamlessly.</p>
+            <div class="badges">
+                <span class="badge">Flask</span>
+                <span class="badge">SQLite</span>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="tech-icons">
+                <i class="fab fa-python"></i>
+                <i class="fas fa-user-lock"></i>
+            </div>
+            <h3>✍️ Blog Website</h3>
+            <p>Full-stack blog with user authentication, posts, and comments using Flask & WTForms.</p>
+            <div class="badges">
+                <span class="badge">Auth</span>
+                <span class="badge">Jinja</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>👨‍💻 About Me</h2>
+    <p>
+        I'm a dedicated and curious 4th-year undergraduate student at <strong>Narula Institute of Technology</strong>, pursuing a degree in Information Technology. My journey into programming began with a simple desire to build things, and today, I'm proud to say I've come a long way — all through self-learning, persistence, and a deep passion for technology.
+    </p>
+    <p>
+        Beyond code, I believe in being kind, humble, and helpful. I enjoy sharing knowledge with peers, contributing to team projects, and learning from every challenge. I’m not just focused on becoming a better developer — I’m striving to be a better person every single day.
+    </p>
+    <p>
+        When I'm not coding, you’ll find me exploring new tech, reading about personal growth, or planning the next project that solves real problems.
+    </p>
+    <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Tkinter</span>
+        <span class="skill-tag">Pandas</span>
+    </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="certificates">
+    <h2>📜 My Certifications</h2>
+    <p>I'm committed to continuous learning. Here are some of the key certifications I've earned:</p>
+    <div class="certificate-grid">
+        <div class="cert-card">
+            <h3>Introduction to Technical Support</h3>
+            <p>IBM (Coursera)</p>
+            <a href="https://drive.google.com/file/d/1S-mAQj55zK2xXdcnheyHcqQSFYoUcbyS/view" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+            <h3>TCS iON Career Edge : Young Professional</h3>
+            <p>TCS</p>
+            <a href="https://drive.google.com/file/d/189Ilx8LNyCqIlM8IWyKDgp-DYXYTTuTJ/view" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card">
+            <h3>Fundamentals of Digital Marketing</h3>
+            <p>Google</p>
+            <a href="https://drive.google.com/file/d/133p044fyhbcUX8CH7jphrfs1_JeEPJo6/view" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+    </div>
+
+    <!-- ✅ "See All on LinkedIn" Button (Moved Outside Grid) -->
+    <div style="margin-top: 40px; text-align: center;">
+        <a href="https://www.linkedin.com/in/shubhamjaju03/details/certifications/" 
+        target="_blank" 
+        class="btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> See All Certificates on LinkedIn
+</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>📬 Let's Connect</h2>
+
+    <div class="contact-links">
+        <a href="mailto:shubhamjaju03@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i> shubhamjaju03@gmail.com
+        </a>
+        <a href="https://github.com/shubhamjaju03" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i> github.com/shubhamjaju03
+        </a>
+        <a href="https://linkedin.com/in/shubhamjaju03" target="_blank" class="contact-item">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/shubhamjaju03
+        </a>
+    </div>
+</section>
+{% endblock %}
